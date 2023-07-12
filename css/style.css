@@ -557,18 +557,32 @@ img {
 }
 
 .detail-hospital-container {
-	height: 244px;
+
 	display: flex;
 	justify-content: center;
 	background-color: rgb(226, 226, 201);
 	width: 100%;
+	padding: 16px;
+	height: auto;
+	word-wrap: break-word;
+	box-sizing: border-box;
 
 }
 
-.article-result-hospital {
-	width: 1030px;
-	height: 212px;
+.article-result-hospital-container {
+	display: flex;
+	justify-content: center;
+	height: auto;
+	word-wrap: break-word;
+	box-sizing: border-box;
+}
 
+.article-result-hospital {
+	height: auto;
+	padding: 0 16px;
+	width: 100%;
+	word-wrap: break-word;
+	box-sizing: border-box;
 }
 
 .hospital-decription-service {
@@ -582,6 +596,7 @@ img {
 	background-color: rgba(233, 233, 228, 0);
 	text-decoration: underline;
 	padding-left: 20px;
+	font-size: 18px;
 }
 
 .detail-bar-direction-result {
@@ -612,6 +627,154 @@ img {
 	justify-content: end;
 	align-items: center;
 
+}
+
+.info-hospital-container {
+	width: 100%;
+	margin-inline: auto;
+	max-width: 1030px;
+	height: 2192.8px;
+	padding: 0 16px;
+}
+
+.info-hospital-content-container {
+	display: flex;
+	align-items: flex-start;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	gap: 60px;
+	width: 998px;
+	height: 1308px;
+	margin: 0;
+}
+
+.left-space-info-container {
+	width: 526px;
+	height: 1276px;
+}
+
+.contact-hospital-container {
+	height: 240px;
+	margin: 16px 0;
+}
+
+.contact-hospital {
+	display: grid;
+	grid-template-columns: 130px auto;
+	height: 144px;
+	grid-gap: 15px;
+}
+
+. @media screen and (min-width: 760px) .contact-hospital-container {
+	grid-template-columns: 150px auto;
+}
+
+.location-map-container {
+	height: 576px;
+	margin: 16px 0;
+}
+
+.location-text-info {
+	display: grid;
+	grid-template-columns: 24px auto;
+	grid-gap: 15px;
+	height: 64px;
+}
+
+.map-link-hospital {
+	margin-top: 16px;
+}
+
+.location-map-info {
+	width: 100%;
+	height: 432px;
+	margin: 16px 0;
+}
+
+.opening-times-container {
+
+	height: 448px;
+	margin: 16px 0;
+}
+
+@media screen and (min-width: 760px) .opening-times-container {
+	grid-template-columns: 150px auto;
+}
+
+.opening-times-hospital {
+	display: grid;
+	grid-template-columns: 130px auto;
+	height: 352px;
+	grid-gap: 15px;
+}
+
+.right-space-info-container {
+	width: 412px;
+	height: 226px;
+	margin: 32px 0;
+	min-width: 412px;
+	position: sticky;
+
+}
+
+@media screen and (min-width: 1030px) .right-space-info-container {
+	display: block;
+}
+
+.right-space-info-without-margin {
+	width: 412px;
+	height: 226px;
+}
+
+.right-space-info-content {
+	width: 412px;
+	height: 226px;
+	padding: 32px;
+	text-align: center;
+	background-color: rgb(226, 226, 201);
+}
+
+.about-this-service-container {
+	height: 523px;
+	margin: 16px 0;
+}
+
+@media screen and (min-width: 1030px) .about-this-service-container {
+	display: block;
+}
+
+.about-this-service-content {
+	display: grid;
+	grid-template-columns: 50% auto;
+	grid-template-rows: auto;
+	grid-column-gap: 40px;
+	height: 445px;
+
+}
+
+@media screen and (min-width: 760px) .about-this-service-content {
+	grid-template-columns: 50% 50%;
+}
+
+.facilities-container {
+	height: 225px;
+	margin: 16px 0;
+	width: 100%;
+}
+
+.facilities-content {
+	display: grid;
+	grid-template-columns: 36px auto;
+	height: 168px;
+	margin-top: 33px;
+
+}
+
+.billing-content {
+	display: grid;
+	grid-template-columns: 36px auto;
+
+	
 }
 
 .title-hospital-finder {
@@ -1025,6 +1188,7 @@ img {
 	background-color: rgba(214, 214, 214, 0.534);
 
 }
+
 .filter-container {
 	position: fixed;
 	top: 90px;
@@ -1037,6 +1201,7 @@ img {
 	border-width: 1px;
 	border-color: rgba(214, 214, 214, 0.534);
 }
+
 .filter-header {
 	display: flex;
 	align-items: center;
@@ -1237,12 +1402,14 @@ input:checked+.slider:before {
 	margin-left: 10px;
 	font-size: 18px;
 }
+
 .emergency-filter-container {
 	height: 92px;
 	border-bottom: solid;
 	border-width: 1px;
 	border-color: #d9d9d9;
 }
+
 .emergency-title {
 	display: flex;
 	justify-content: start;
@@ -1251,16 +1418,19 @@ input:checked+.slider:before {
 	height: 26px;
 	margin-bottom: 16px;
 }
+
 .emergency-text {
 	font-size: 22px;
 	font-weight: 500;
 	color: #1E4759;
 }
+
 .emergency-choice {
 	display: flex;
 	width: 700px;
 	height: 26px;
 }
+
 .yes-choice {
 	display: flex;
 	justify-content: start;
@@ -1268,6 +1438,7 @@ input:checked+.slider:before {
 	align-items: center;
 	margin-right: 315px;
 }
+
 .no-choice {
 	display: flex;
 	justify-content: start;
@@ -1275,10 +1446,12 @@ input:checked+.slider:before {
 	align-items: center;
 
 }
+
 .emergency-input {
 	width: 24px;
 	height: 24px;
 }
+
 .choice-text {
 	margin-left: 10px;
 	font-size: 18px;
@@ -1291,6 +1464,7 @@ input:checked+.slider:before {
 	border-width: 1px;
 	border-color: #d9d9d9;
 }
+
 .size-area-title {
 	display: flex;
 	justify-content: start;
@@ -1299,17 +1473,20 @@ input:checked+.slider:before {
 	height: 26px;
 	margin-bottom: 16px;
 }
+
 .size-area-text {
 	font-size: 22px;
 	font-weight: 500;
 	color: #1E4759;
 }
+
 .size-area-choice {
 	display: flex;
 	width: 700px;
 	height: 26px;
 	margin-bottom: 20px;
 }
+
 .size-choice {
 	display: flex;
 	justify-content: start;
@@ -1317,6 +1494,7 @@ input:checked+.slider:before {
 	align-items: center;
 	margin-right: 224px;
 }
+
 .size-choice-1 {
 	display: flex;
 	justify-content: start;
@@ -1324,6 +1502,7 @@ input:checked+.slider:before {
 	align-items: center;
 	margin-right: 200px;
 }
+
 .area-choice {
 	display: flex;
 	justify-content: start;
@@ -1331,10 +1510,12 @@ input:checked+.slider:before {
 	align-items: center;
 
 }
+
 .size-input {
 	width: 24px;
 	height: 24px;
 }
+
 .choice-text {
 	margin-left: 10px;
 	font-size: 18px;
@@ -1346,6 +1527,7 @@ input:checked+.slider:before {
 	border-width: 1px;
 	border-color: #d9d9d9;
 }
+
 .bed-capacity-title {
 	display: flex;
 	justify-content: start;
@@ -1354,17 +1536,20 @@ input:checked+.slider:before {
 	height: 26px;
 	margin-bottom: 16px;
 }
+
 .bed-capacity-text {
 	font-size: 22px;
 	font-weight: 500;
 	color: #1E4759;
 }
+
 .bed-capacity-choice {
 	display: flex;
 	width: 700px;
 	height: 26px;
 	margin-bottom: 20px;
 }
+
 .bed-choice {
 	display: flex;
 	justify-content: start;
@@ -1372,6 +1557,7 @@ input:checked+.slider:before {
 	align-items: center;
 	margin-right: 195px;
 }
+
 .bed-choice-1 {
 	display: flex;
 	justify-content: start;
@@ -1379,6 +1565,7 @@ input:checked+.slider:before {
 	align-items: center;
 	margin-right: 235px;
 }
+
 .area-choice {
 	display: flex;
 	justify-content: start;
@@ -1386,21 +1573,24 @@ input:checked+.slider:before {
 	align-items: center;
 
 }
+
 .bed-input {
 	width: 24px;
 	height: 24px;
 }
+
 .choice-text {
 	margin-left: 10px;
 	font-size: 18px;
 }
 
-.show-result-button-container{
+.show-result-button-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-top: 25px;
 }
+
 #topFeature {
 	float: left;
 	display: inline;
